@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+.no_margin{
+  margin: 0;
+}
+.no_padding{
+  padding: 0;
+}
+/* Navbar .......................................... */
+.navbar {
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+.navbar .navbar-brand:hover {
+  transform: scale(1.1);
+  color: royalblue !important;
+}
+.navbar-nav .nav-item {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  font-weight: 550;
+  padding: 0.8rem 0;
+}
+.navbar-nav .active_link {
+  color: royalblue !important;
+  border-bottom: groove;
+}
+
+/* Register Form ...................................*/
+.main_container {
+  background: whitesmoke;
+  min-height: 50vh;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner_container {
+  width: auto;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding: 6rem 10rem 6rem 6rem;
+  border-radius: 20px;
+  box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.4), -4px -4px 8px white;
+}
+
+.registerForm h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.form-group {
+  padding: 7px 0px 0px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-group:focus-within {
+  border-bottom: 1px solid blue;
+ 
+}
+.form-group:focus-within label {
+  color: blue;
+}
+
+.form-group label {
+  font-size: 1.4rem;
+}
+.form-group input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+.registerForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registerForm button {
+  margin-top: 2rem;
+  width: 12rem;
+  font-size: 1.6rem;
+  border-radius: 20px;
+}
+
+.registerImage figure img {
+  margin-top: 6rem;
+  width: 30rem; 
+}
+.registerImage figure figcaption {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Login..................................................... */
+.inner_containerLogin{
+  width: auto;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding: 6rem 12rem 6rem 3rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1), -4px -4px 8px white;
+}
+
+.loginImage{
+  margin-right: 5rem;
+}
+
+/*Contact....................................................*/
+.main_box{
+
+  padding: 3rem;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content{
+  min-width: 30rem;
+  /* background: aqua; */
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 3rem 1.2rem 3rem;
+  margin-top: 1rem;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.4);
+  
+}
+.content:hover{
+  background: white;
+  cursor:pointer;
+   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.content:hover{
+  box-shadow:2px 4px 5px royalblue ;
+}
+.content:hover>h1{
+  transform: scale(1.3);
+  color: royalblue ;
+}
+
+.content-info{
+  padding-left: 1.8rem;
+}
+.content-info h3{
+  font-weight: bold;
+}
+.content-info h4{
+  color: rgba(0, 0, 0, 0.9) !important  ;
+}
+
+.message_box{
+  background: white;
+  padding: 4rem !important ;
+  border-radius: 20px;
+   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.message_box h1{
+  padding-left: 2rem;
+  font-weight: bold;
+
+}
+ .message_box .details{
+  margin: 3rem 0 2rem 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.message_box .details input{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  min-width: 30%;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+
+}
+.details input:focus-within{
+  border:1px solid royalblue ;
+/* box-shadow: 2px 1px 2px royalblue; */
+box-shadow: 0px 0px 4px royalblue;
+
+}
+
+.message, .send_button{
+  display: flex;
+  justify-content: space-around;
+}
+.message_box textarea{
+  width:97%;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+   
+.message_box textarea:focus-within{ 
+  border:1px solid royalblue ;
+   box-shadow: 0px 0px 5px royalblue;
+}
+
+.btn_send{
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-weight: 550; 
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+  background: royalblue;
+  color: white;
+}
+.btn_send:hover{
+  background: white;
+  color: royalblue;
+  box-shadow: 2px 3px 3px royalblue;
+
+}
+
+/* Home .............................................................. */
+.outer_home{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( to right,rgba(62, 64, 216, 0.2) 50%,whitesmoke 50%);
+}
+.outer_home h4{
+  color: royalblue ;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.outer_home h1{
+  font-size: 3rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.outer_home h1 span{
+  font-size: 4rem;
+  color: tomato;
+  font-weight: bolder;
+ 
+}
+
+
+/* AboutMe.................................................................... */
+.about_outerBox{
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+  padding-top: 5rem;
+ 
+}
+.about_container{
+  height: fit-content;
+   padding: 5rem !important;
+   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
+}
+.about_header .my_name h3{
+ font-weight: bold;
+}
+.about_header .my_name h4{
+  color: royalblue;
+  text-transform: capitalize;
+}
+.about_container .profile_img img{
+   width: 80%;
+   filter: drop-shadow(5px 3px 3px rgba(0,0, 0, 0.2));
+}
+.about_container button{
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  background: whitesmoke;
+  box-shadow:5px 3px 3px rgba(0,0, 0, 0.2) ;
+}
+.about_container button:hover{
+  background: white !important;
+ color:  lightskyblue;
+  box-shadow:5px 3px 3px lightskyblue ;
+}
+.about_container button:active{
+  background: whitesmoke !important;
+}
+.about_container .about_header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about_container .about_header .tab_changer a{
+      font-size: 1.5rem;
+      line-height: 4rem;
+
+      padding:1rem;
+      font-weight: bold;
+      text-decoration: none;
+}
+
+
+.about_container .about_header .tab_changer a:focus{
+   color: black;
+   border-bottom: 2px solid blue;
+}
+.below_part{
+ margin-top: 3rem;
+}
+.work_links{
+  display: flex;
+  flex-direction: column;
+}
+.work_links h5{
+  text-align: left;
+  font-weight: bold;
+}
+.work_links a{
+  font-weight: 550;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+.below_part .tab_div{
+  padding: 0;
+  margin: 0;
+}
+.below_part .tab_div .personal_details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 !important;
+  padding:0;
+  height: 100%;
+}
+.below_part .row_data{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.below_part .row_data:hover{
+  cursor: pointer;
+  transform: scaleY(1.1 );
+  letter-spacing: 1px !important;
+}
+.personal_details .row_data h5{
+ font-weight: bold;
+}
+.personal_details .row_data p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: royalblue;
+}
+
+
+/* Responsive """"""""""""""""""""""""""""""""""""""""""""""""""" */
+@media (max-width: 760px) {
+  html {
+    font-size: 55%;
+  }
+  /* navigation */
+  .navbar-nav .nav-item {
+         text-align: center;
+}
+
+  /* registration -------------------------------------------------------*/
+  .main_container {
+    padding-top: 2rem;
+  }
+  .inner_container {
+    width: auto;
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+  }
+
+  .registerForm h1 {
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .registerImage figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .registerImage figure img {
+    width: 30%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .registerImage figure figcaption {
+    letter-spacing: 1px;
+    font-weight: 550;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /*Login -------------------------------------------------------------------- */
+   .loginImage{
+     margin-right: 0;
+   }
+    .inner_containerLogin {
+     width: auto;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+   /* Contact ----------------------------------------------------------------- */
+   .main_box{
+  padding: 1rem;
+}
+.content {
+  margin-top: 2rem;
+    width: 90%;
+   
+}
+.message_box{
+  padding: 2rem 0px 1rem 0px;
+}
+.message_box .details input{
+  width: 98%;
+  margin-top: 1rem;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+/* About Me---------------------------------------------------------------------- */
+.about_container{
+  height: fit-content;
+   padding: 5rem 1.3rem !important;
+}
+.about_container .profile_img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.about_container .profile_img img{
+   width: 40%;
+   background: blue;
+}
+
+.about_container .btn_div{
+   display: flex;
+   flex-direction: column;
+}
+.about_container button{
+ margin-left: auto;
+}
+.work_links{
+margin-top: 3rem;
+}
+.work_links h4{
+  font-weight: bold;
+}
+.work_links a{
+
+}
+.work_links{
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+}
+.work_links h5{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.work_links a{
+text-align: center;
+margin-top: 0.5rem;
+font-size: 1.5rem;
+}
+
+.personal_details .row_data h5{
+ font-size: 1.6rem;
+}
+.personal_details .row_data p{
+  font-size:  1.6rem;
+}
+/* home Page ====================================================== */
+.outer_home h1{
+  font-size: 2.4rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.outer_home h1 span{
+  font-size: 4rem;
+  color: tomato;
+  font-weight: bolder;
+ 
+}
+
+
+
+}
